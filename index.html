@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Carta Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aperte o botão para abrir esta carta</h1>
+        <button onclick="abrirCarta()">Abra</button>
+
+        <div id="carta" class="carta">
+            <h2>Feliz Aniversário, Amor!</h2>
+            <p>Amor, neste dia especial, eu queria que você soubesse o quanto você significa para mim. Você é meu "mor", minha "nega", e a cada dia eu sinto mais e mais amor por você.</p>
+            <p>Hoje é o seu dia, e eu espero que seja incrível! Sei que esse presente é simples, mas foi feito com todo o meu carinho e amor para você. Desejo que tenha tudo de bom e que possa realizar todos os seus sonhos.</p>
+            <p>Quero muito estar ao seu lado para acompanhar cada conquista, cada sorriso e cada momento especial. Te amo muito!</p>
+            <button onclick="fecharCarta()">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        function abrirCarta() {
+            document.getElementById("carta").style.display = "block";
+            document.title = "Feliz Aniversário";
+        }
+
+        function fecharCarta() {
+            document.getElementById("carta").style.display = "none";
+            document.title = "Minha Carta Especial";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Fundo lilás */
+body {
+    background-color: #E6E6FA;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container e título */
+.container {
+    text-align: center;
+    color: #4B0082;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Botão para abrir a carta */
+button {
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8A2BE2;
+}
+
+/* Carta (conteúdo) */
+.carta {
+    display: none;
+    background-color: white;
+    border: 2px solid #4B0082;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: aparecer 0.8s ease-out;
+}
+
+.carta h2 {
+    color: #4B0082;
+}
+
+.carta p {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Botão para fechar a carta */
+.carta button {
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.carta button:hover {
+    background-color: #8A2BE2;
+}
+
+/* Animação ao abrir a carta */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Flores ao redor da carta */
+.container:before, .container:after {
+    content: "🌸";
+    font-size: 2em;
+    position: absolute;
+    color: #BA55D3;
+}
+
+.container:before {
+    top: 5%;
+    left: 5%;
+}
+
+.container:after {
+    bottom: 5%;
+    right: 5%;
+}
